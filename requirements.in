@@ -1,0 +1,11 @@
+ipympl
+jupyterlab
+jupyter_http_over_ws
+matplotlib
+numpy
+pandas
+rich
+scipy
+seaborn
+torch
+transformers
