@@ -30,7 +30,7 @@ def tokenize_with_mask(sen, tokenizer, only_ids=False):
     matcher = SequenceMatcher(
         None,
         batch_encoding['input_ids'][0].tolist(),
-        tokenize(re.sub('<.*>', tokenizer.mask_token, sen), tokenizer, only_ids=True)
+        tokenizer(re.sub('<.*>', tokenizer.mask_token, sen), return_tensors="pt")['input_ids'][0].tolist()
     )
     for (op, s1_start, s1_end, _, _) in matcher.get_opcodes():
         for token_id in range(s1_start, s1_end):
