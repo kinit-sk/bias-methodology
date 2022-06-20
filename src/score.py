@@ -71,21 +71,25 @@ def clear_cache():
     mask_logprob.cache_clear()
 
 
-def pair_score(sen1, sen2, tokenizer, model):
-    '''
-    logprob(sen1) - logprob(sen2)
-    '''
-    return sentence_logprob(sen1, tokenizer, model) - sentence_logprob(sen2, tokenizer, model)
+def pair_score(dt, tokenizer, model, swap=False):
+    """
+    Compares s0 and s2. Alternatively compares s1 and s3.
+    """
+    offset = swap
+    return [
+        sentence_logprob(sam[offset], tokenizer, model) - sentence_logprob(sam[2 + offset], tokenizer, model)
+        for sam in dt
+    ]
 
 
 def our_score(dt, tokenizer, model):
     """
-    Compares `pair_score` between `s0, s1` and `s2, s3`.
+    Compares `s0 - s1` and `s2 - s3`.
 
     Can be used with datasets: our, stereoset-genderswap
     """
     return [
-        pair_score(s0, s1, tokenizer, model) - pair_score(s2, s3, tokenizer, model)
+        sentence_logprob(s0, tokenizer, model) - sentence_logprob(s1, tokenizer, model) - sentence_logprob(s2, tokenizer, model) + sentence_logprob(s3, tokenizer, model)
         for s0, s1, s2, s3 in dt
     ]
 
@@ -99,7 +103,7 @@ def stereo_score(dt, tokenizer, model, swap=False):
     """
     offset = swap * 2
     return [
-        pair_score(sam[offset], sam[1 + offset], tokenizer, model)
+        sentence_logprob(sam[offset], tokenizer, model) - sentence_logprob(sam[1 + offset], tokenizer, model)
         for sam in dt
     ]
 
@@ -155,6 +159,9 @@ stereo_score_genderwrap.__name__ = 'stereo_score_genderswap'  # Used in plots
 crows_score_antistereo = partial(crows_score, swap=True)
 crows_score_antistereo.__name__ = 'crows_score_antistereo'  # Used in plots
 
+pair_score_antistereo = partial(pair_score, swap=True)
+pair_score_antistereo.__name__ = 'pair_score_antistereo'  # Used in plots
+
 
 def get_score_by_name(name):
     return {
@@ -163,4 +170,6 @@ def get_score_by_name(name):
         'stereoset-genderswap': stereo_score_genderwrap,
         'crows': crows_score,
         'crows-antistereo': crows_score_antistereo,
+        'pair': pair_score,
+        'pair-antistereo': pair_score_antistereo,
     }[name]
