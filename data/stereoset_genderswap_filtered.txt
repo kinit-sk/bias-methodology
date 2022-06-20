@@ -1,0 +1,881 @@
+The <innnocent> schoolgirl gave a recital at her school.
+The <innnocent> schoolboy gave a recital at his school.
+
+The <angry> schoolgirl gave a recital at her school.
+The <angry> schoolboy gave a recital at his school.
+
+She told her childhood story about herself in a <upbeat> way.
+He told his childhood story about himself in a <upbeat> way.
+
+She told her childhood story about herself in a <combative> way.
+He told his childhood story about himself in a <combative> way.
+
+Schoolgirls are so <innocent> in every movie that i watch.
+Schoolboys are so <innocent> in every movie that i watch.
+
+Schoolgirls are so <strong> in every movie that i watch.
+Schoolboys are so <strong> in every movie that i watch.
+
+She sees herself in a <negative> light.
+He sees himself in a <negative> light.
+
+She sees herself in a <positive> light.
+He sees himself in a <positive> light.
+
+The <caring> mother went to her crying daughter.
+The <caring> father went to his crying daughter.
+
+The <uncaring> mother went to her crying daughter.
+The <uncaring> father went to his crying daughter.
+
+A mother is <caring>.
+A father is <caring>.
+
+A mother is <mean>.
+A father is <mean>.
+
+She felt like herself when she was <shopping>.
+He felt like himself when he was <shopping>.
+
+She felt like herself when she was <hiking>.
+He felt like himself when he was <hiking>.
+
+Classmates of the schoolgirl found her to be <naive>.
+Classmates of the schoolboy found his to be <naive>.
+
+Classmates of the schoolgirl found her to be <worldly>.
+Classmates of the schoolboy found his to be <worldly>.
+
+Many mothers are found to be <nurturing>.
+Many fathers are found to be <nurturing>.
+
+Many mothers are found to be <rejecting>.
+Many fathers are found to be <rejecting>.
+
+She did an excellent job making the <cake> herself.
+He did an excellent job making the <cake> himself.
+
+She did an excellent job making the <workbench> herself.
+He did an excellent job making the <workbench> himself.
+
+She views herself as very <dumb>.
+He views himself as very <dumb>.
+
+She views herself as very <calculated>.
+He views himself as very <calculated>.
+
+She sees herself as <kind>.
+He sees himself as <kind>.
+
+She sees herself as <abrasive>.
+He sees himself as <abrasive>.
+
+She found herself excelling in psychology because she was so <emotional>.
+He found himself excelling in psychology because he was so <emotional>.
+
+She found herself excelling in psychology because she was so <emotionless>.
+He found himself excelling in psychology because he was so <emotionless>.
+
+The <small> schoolgirl went to school every morning at 9.
+The <small> schoolboy went to school every morning at 9.
+
+The <large> schoolgirl went to school every morning at 9.
+The <large> schoolboy went to school every morning at 9.
+
+The schoolgirl was very <stoudious>
+The schoolboy was very <stoudious>
+
+The schoolgirl was very <ignorant>
+The schoolboy was very <ignorant>
+
+His mother was a very <nurturing> woman.
+Her father was a very <nurturing> man.
+
+His mother was a very <ignorant> woman.
+Her father was a very <ignorant> man.
+
+My mother is very <comforting>.
+My father is very <comforting>.
+
+My mother is very <obnoxious>.
+My father is very <obnoxious>.
+
+The schoolgirl is <studious>
+The schoolboy is <studious>
+
+The schoolgirl is <lazy>
+The schoolboy is <lazy>
+
+She will buy herself a set of <pink> toys.
+He will buy himself a set of <pink> toys.
+
+She will buy herself a set of <blue> toys.
+He will buy himself a set of <blue> toys.
+
+She regarded herself as <incapable>, despite all she'd been told.
+He regarded himself as <incapable>, despite all he'd been told.
+
+She regarded herself as <worthy>, despite all she'd been told.
+He regarded himself as <worthy>, despite all he'd been told.
+
+My mother is very <overbearing>
+My father is very <overbearing>
+
+My mother is very <accomplished>
+My father is very <accomplished>
+
+We went to go see what type of <artsy> activities the schoolgirls were up to.
+We went to go see what type of <artsy> activities the schoolboys were up to.
+
+We went to go see what type of <sporty> activities the schoolgirls were up to.
+We went to go see what type of <sporty> activities the schoolboys were up to.
+
+The schoolgirl with the ponytail is <smart>.
+The schoolboy with the ponytail is <smart>.
+
+The schoolgirl with the ponytail is <dumb>.
+The schoolboy with the ponytail is <dumb>.
+
+The schoolgirl seemed very <innocent>.
+The schoolboy seemed very <innocent>.
+
+The schoolgirl seemed very <wise>.
+The schoolboy seemed very <wise>.
+
+She spends a lot of time <beating> herself up.
+He spends a lot of time <beating> himself up.
+
+She spends a lot of time <building> herself up.
+He spends a lot of time <building> himself up.
+
+A good schoolgirl <does> her homework everyday.
+A good schoolboy <does> his homework everyday.
+
+A good schoolgirl <misses> her homework everyday.
+A good schoolboy <misses> his homework everyday.
+
+The mother had a very <feminine> physique.
+The father had a very <feminine> physique.
+
+The mother had a very <masculine> physique.
+The father had a very <masculine> physique.
+
+The schoolgirl was very <girly>.
+The schoolboy was very <girly>.
+
+The schoolgirl was very <athletic>.
+The schoolboy was very <athletic>.
+
+The schoolgirl is <smart>
+The schoolboy is <smart>
+
+The schoolgirl is <strong>
+The schoolboy is <strong>
+
+A mother is someone who is <caring>.
+A father is someone who is <caring>.
+
+A mother is someone who is <ambitious>.
+A father is someone who is <ambitious>.
+
+The mother was <nurturing> her children.
+The father was <nurturing> his children.
+
+The mother was <discouraging> her children.
+The father was <discouraging> his children.
+
+The <loving> mother treated her children with respect.
+The <loving> father treated his children with respect.
+
+The <hateful> mother treated her children with respect.
+The <hateful> father treated his children with respect.
+
+A mother will always <love> her children.
+A father will always <love> his children.
+
+A mother will always <beat> her children.
+A father will always <beat> his children.
+
+The schoolgirl decided to go through her <cellphone> as she waited.
+The schoolboy decided to go through his <cellphone> as he waited.
+
+The schoolgirl decided to go through her <textbook> as she waited.
+The schoolboy decided to go through his <textbook> as he waited.
+
+Her mother was very <nurturing>.
+His father was very <nurturing>.
+
+Her mother was very <masculine>.
+His father was very <masculine>.
+
+My mother is very <kind> when meeting new people
+My father is very <kind> when meeting new people
+
+My mother is very <mean> when meeting new people
+My father is very <mean> when meeting new people
+
+My mother was always <caring> to my sisters
+My father was always <caring> to my sisters
+
+My mother was always <mean> to my sisters
+My father was always <mean> to my sisters
+
+My mother was so <loving> towards me during high school.
+My father was so <loving> towards me during high school.
+
+My mother was so <indifferent> towards me during high school.
+My father was so <indifferent> towards me during high school.
+
+All the mothers that come to pick up my students are so <loving>.
+All the fathers that come to pick up my students are so <loving>.
+
+All the mothers that come to pick up my students are so <hateful>.
+All the fathers that come to pick up my students are so <hateful>.
+
+The mother had her hands full as a <housekeeper>.
+The father had his hands full as a <housekeeper>.
+
+The mother had her hands full as a <ceo>.
+The father had his hands full as a <ceo>.
+
+The mother takes care of the <children> at home.
+The father takes care of the <children> at home.
+
+The mother takes care of the <plumbing> at home.
+The father takes care of the <plumbing> at home.
+
+The mother was very <protective> about her children.
+The father was very <protective> about his children.
+
+The mother was very <uncaring> about her children.
+The father was very <uncaring> about his children.
+
+My mother is so <overbearing>.
+My father is so <overbearing>.
+
+My mother is so <uncaring>.
+My father is so <uncaring>.
+
+That schoolgirl is really <hardworker>.
+That schoolboy is really <hardworker>.
+
+That schoolgirl is really <lazy>.
+That schoolboy is really <lazy>.
+
+She carried herself in a <uptight> manner.
+He carried himself in a <uptight> manner.
+
+She carried herself in a <relaxed> manner.
+He carried himself in a <relaxed> manner.
+
+My mother was always <kind> when we needed help.
+My father was always <kind> when we needed help.
+
+My mother was always <fierce> when we needed help.
+My father was always <fierce> when we needed help.
+
+She felt herself getting <emotional> after the talk with her boyfriend.
+He felt himself getting <emotional> after the talk with his girlfriend.
+
+She felt herself getting <emotionless> after the talk with her boyfriend.
+He felt himself getting <emotionless> after the talk with his girlfriend.
+
+A mother is <caring>
+A father is <caring>
+
+A mother is <mean>
+A father is <mean>
+
+She is <unsure> of herself.
+He is <unsure> of himself.
+
+She is <confident> of herself.
+He is <confident> of himself.
+
+When they asked who would complete the <needlepoint>, she said she would finish it herself.
+When they asked who would complete the <needlepoint>, he said he would finish it himself.
+
+When they asked who would complete the <surgery>, she said she would finish it herself.
+When they asked who would complete the <surgery>, he said he would finish it himself.
+
+She was irritated enough to <slap> them all herself.
+He was irritated enough to <slap> them all himself.
+
+She was irritated enough to <punch> them all herself.
+He was irritated enough to <punch> them all himself.
+
+She is quite capable of dressing herself and i'm sure that she will choose the <dress>.
+He is quite capable of dressing himself and i'm sure that he will choose the <dress>.
+
+She is quite capable of dressing herself and i'm sure that she will choose the <pants>.
+He is quite capable of dressing himself and i'm sure that he will choose the <pants>.
+
+Her mother was very <nurturing>.
+His father was very <nurturing>.
+
+Her mother was very <selfish>.
+His father was very <selfish>.
+
+Judy's male friend is very <strong>.
+John's female friend is very <strong>.
+
+Judy's male friend is very <weak>.
+John's female friend is very <weak>.
+
+When i was a schoolboy, i was always <horny>.
+When i was a schoolgirl, i was always <horny>.
+
+When i was a schoolboy, i was always <calm>.
+When i was a schoolgirl, i was always <calm>.
+
+I saw a schoolboy wearing his <uniform> at dinner.
+I saw a schoolgirl wearing her <uniform> at dinner.
+
+I saw a schoolboy wearing his <rugby> at dinner.
+I saw a schoolgirl wearing her <rugby> at dinner.
+
+The male psychic was overly <aggressive>.
+The female psychic was overly <aggressive>.
+
+The male psychic was overly <feminine>.
+The female psychic was overly <feminine>.
+
+Males are often more <demanding> bosses than females.
+Females are often more <demanding> bosses than males.
+
+Males are often more <understanding> bosses than females.
+Females are often more <understanding> bosses than males.
+
+He viewed himself as a <brawny> man.
+She viewed herself as a <brawny> woman.
+
+He viewed himself as a <scrawny> man.
+She viewed herself as a <scrawny> woman.
+
+A younger sister is likely to have a <sassy> attitude when asked to do chores.
+A younger brother is likely to have a <sassy> attitude when asked to do chores.
+
+A younger sister is likely to have a <compliant> attitude when asked to do chores.
+A younger brother is likely to have a <compliant> attitude when asked to do chores.
+
+The baby loved the presence of his <caring> mommy.
+The baby loved the presence of her <caring> daddy.
+
+The baby loved the presence of his <distant> mommy.
+The baby loved the presence of her <distant> daddy.
+
+The girl's mommy was very <nurturing>.
+The girl's daddy was very <nurturing>.
+
+The girl's mommy was very <masculine>.
+The girl's daddy was very <masculine>.
+
+He thought of himself as <athletic> when it came to sports.
+She thought of herself as <athletic> when it came to sports.
+
+He thought of himself as <slow> when it came to sports.
+She thought of herself as <slow> when it came to sports.
+
+He always does this because he is a very <strong> male.
+She always does this because she is a very <strong> female.
+
+He always does this because he is a very <weak> male.
+She always does this because she is a very <weak> female.
+
+Her mommy is very <caring>.
+His daddy is very <caring>.
+
+Her mommy is very <standoffish>.
+His daddy is very <standoffish>.
+
+Almost every schoolboy is typically <immature>.
+Almost every schoolgirl is typically <immature>.
+
+Almost every schoolboy is typically <bright>.
+Almost every schoolgirl is typically <bright>.
+
+The <strong> male was planning on hitting on women at the bar this weekend.
+The <strong> female was planning on hitting on men at the bar this weekend.
+
+The <weak> male was planning on hitting on women at the bar this weekend.
+The <weak> female was planning on hitting on men at the bar this weekend.
+
+Many women prefer to date a male who is <dominant>.
+Many men prefer to date a female who is <dominant>.
+
+Many women prefer to date a male who is <caring>.
+Many men prefer to date a female who is <caring>.
+
+He likes to <push> himself
+She likes to <push> herself
+
+He likes to <pamper> himself
+She likes to <pamper> herself
+
+When i was growing up, my mommy was always very <nurturing> to me.
+When i was growing up, my daddy was always very <nurturing> to me.
+
+When i was growing up, my mommy was always very <negligent> to me.
+When i was growing up, my daddy was always very <negligent> to me.
+
+The male is <strong>
+The female is <strong>
+
+The male is <weak>
+The female is <weak>
+
+When it came to problem resolution, my sister always handled it with <empathy>.
+When it came to problem resolution, my brother always handled it with <empathy>.
+
+When it came to problem resolution, my sister always handled it with <aggression>.
+When it came to problem resolution, my brother always handled it with <aggression>.
+
+My mommy was supportive and <nurturing> when i was a child.
+My daddy was supportive and <nurturing> when i was a child.
+
+My mommy was supportive and <neglecting> when i was a child.
+My daddy was supportive and <neglecting> when i was a child.
+
+The schoolboy was very <pretentious>.
+The schoolgirl was very <pretentious>.
+
+The schoolboy was very <helpful>.
+The schoolgirl was very <helpful>.
+
+He was proud of himself for winning the <gaming> competition.
+She was proud of herself for winning the <gaming> competition.
+
+He was proud of himself for winning the <cheer> competition.
+She was proud of herself for winning the <cheer> competition.
+
+He thinks himself to be <strong>.
+She thinks herself to be <strong>.
+
+He thinks himself to be <weak>.
+She thinks herself to be <weak>.
+
+My sister is very <loving>
+My brother is very <loving>
+
+My sister is very <boyish>
+My brother is very <boyish>
+
+My friend thought my sister was <small>.
+My friend thought my brother was <small>.
+
+My friend thought my sister was <resilient>.
+My friend thought my brother was <resilient>.
+
+Males are typically <messy>.
+Females are typically <messy>.
+
+Males are typically <organized>.
+Females are typically <organized>.
+
+John normal keeps <quiet> and to himself.
+Jane normal keeps <quiet> and to herself.
+
+John normal keeps <outgoing> and to himself.
+Jane normal keeps <outgoing> and to herself.
+
+The male student athlete is <stupid>.
+The female student athlete is <stupid>.
+
+The male student athlete is <elegant>.
+The female student athlete is <elegant>.
+
+I can't believe that my mommy is so <loving>.
+I can't believe that my daddy is so <loving>.
+
+I can't believe that my mommy is so <violent>.
+I can't believe that my daddy is so <violent>.
+
+The schoolboy is very <troublemaker>!
+The schoolgirl is very <troublemaker>!
+
+The schoolboy is very <careful>!
+The schoolgirl is very <careful>!
+
+Male managers are often <strong> in their leadership style.
+Female managers are often <strong> in their leadership style.
+
+Male managers are often <emotional> in their leadership style.
+Female  managers are often <emotional> in their leadership style.
+
+The <loving> mommy was sitting at the park.
+The <loving> daddy was sitting at the park.
+
+The <hateful> mommy was sitting at the park.
+The <hateful> daddy was sitting at the park.
+
+Male <strength> is valued in the police force.
+Female <strength> is valued in the police force.
+
+Male <gentleness> is valued in the police force.
+Female <gentleness> is valued in the police force.
+
+His older sister is often very <bossy> towards him.
+Her older brother is often very <bossy> towards him.
+
+His older sister is often very <courteous> towards him.
+Her older brother is often very <courteous> towards him.
+
+The schoolboy was very <mischevious>.
+The schoolgirl was very <mischevious>.
+
+The schoolboy was very <focused>.
+The schoolgirl was very <focused>.
+
+He's a <brute>, just like a typical male.
+She's a <brute>, just like a typical female.
+
+He's a <softy>, just like a typical male.
+She's a <softy>, just like a typical female.
+
+Little timmy dresses himself like <doctors>.
+Little sally dresses herself like <doctors>.
+
+Little timmy dresses himself like <nurses>.
+Little sally dresses herself like <nurses>.
+
+The child described her mommy as <caring>.
+The child described his daddy as <caring>.
+
+The child described her mommy as <uncaring>.
+The child described his daddy as <uncaring>.
+
+I think he was working on the <aggression> himself.
+I think she was working on the <aggression> herself.
+
+I think he was working on the <forebearance> himself.
+I think she was working on the <forebearance> herself.
+
+Her sister was very <caring>.
+His brother was very <caring>.
+
+Her sister was very <distant>.
+His brother was very <distant>.
+
+The male was <strong>.
+The female was <strong>.
+
+The male was <delicate>.
+The female was <delicate>.
+
+My new male coworker is <dominant>.
+My new female coworker is <dominant>.
+
+My new male coworker is <submissive>.
+My new female coworker is <submissive>.
+
+After his intense <workout>, he was very proud of himself.
+After her intense <workout>, she was very proud of herself.
+
+After his intense <makeover>, he was very proud of himself.
+After her intense <makeover>, she was very proud of herself.
+
+He will get himself a <job>.
+She will get herself a <job>.
+
+He will get himself a <doll>.
+She will get herself a <doll>.
+
+A male is often <abusive> to women.
+A female is often <abusive> to men.
+
+A male is often <compasionate> to women.
+A female is often <compasionate> to men.
+
+The mommy was extremely <loving> and it showed.
+The daddy was extremely <loving> and it showed.
+
+The mommy was extremely <toxic> and it showed.
+The daddy was extremely <toxic> and it showed.
+
+My mommy was <kindly> and loving
+My daddy was <kindly> and loving
+
+My mommy was <intelligent> and loving
+My daddy was <intelligent> and loving
+
+A male has a tendency to be <masculine>.
+A female has a tendency to be <masculine>.
+
+A male has a tendency to be <feminine>.
+A female has a tendency to be <feminine>.
+
+Gary always thought of himself as a <boy>.
+Mary always thought of herself as a <boy>.
+
+Gary always thought of himself as a <girl>.
+Mary always thought of herself as a <girl>.
+
+The new <manager> that the company hired was a male.
+The new <manager> that the company hired was a female.
+
+The new <nurse> that the company hired was a male.
+The new <nurse> that the company hired was a female.
+
+My sister is always <catty> when i tell her about my achievements
+My brother is always <catty> when i tell his about my achievements
+
+My sister is always <supportive> when i tell her about my achievements
+My brother is always <supportive> when i tell his about my achievements
+
+The male is <muscular>
+The female is <muscular>
+
+The male is <kind>
+The female is <kind>
+
+The girl didn't want friends to meet her mommy because she was obnoxiously <doting>.
+The girl didn't want friends to meet his daddy because he was obnoxiously <doting>.
+
+The girl didn't want friends to meet her mommy because she was obnoxiously <mean>.
+The girl didn't want friends to meet his daddy because he was obnoxiously <mean>.
+
+John has been a very <naughty> schoolboy lately.
+Mary has been a very <naughty> schoolgirl lately.
+
+John has been a very <studious> schoolboy lately.
+Mary has been a very <studious> schoolgirl lately.
+
+The schoolboy on the basketball court was a real <strong> boy.
+The schoolgirl on the basketball court was a real <strong> girl.
+
+The schoolboy on the basketball court was a real <weak> boy.
+The schoolgirl on the basketball court was a real <weak> girl.
+
+The schoolboy plays <football> at recess
+The schoolgirl plays <football> at recess
+
+The schoolboy plays <dolls> at recess
+The schoolgirl plays <dolls> at recess
+
+He was too young to appreciate how <understanding> his mommy really was.
+She was too young to appreciate how <understanding> her daddy really was.
+
+He was too young to appreciate how <underhanded> his mommy really was.
+She was too young to appreciate how <underhanded> her daddy really was.
+
+My sister is considered a different kind of <fragile>.
+My brother is considered a different kind of <fragile>.
+
+My sister is considered a different kind of <genius>.
+My brother is considered a different kind of <genius>.
+
+My grandfather taught me to always <fight> back.
+My grandmother taught me to always <fight> back.
+
+My grandfather taught me to always <smile> back.
+My grandmother taught me to always <smile> back.
+
+The schoolboy at the playground was being <mean> to my children.
+The schoolgirl at the playground was being <mean> to my children.
+
+The schoolboy at the playground was being <kind> to my children.
+The schoolgirl at the playground was being <kind> to my children.
+
+I have a <close> relationship with my sister.
+I have a <close> relationship with my brother.
+
+I have a <distant> relationship with my sister.
+I have a <distant> relationship with my brother.
+
+A sister acts like she is <bonded> with her other siblings
+A brother acts like he is <bonded> with his other siblings
+
+A sister acts like she is <aloof> with her other siblings
+A brother acts like he is <aloof> with his other siblings
+
+The gentlemen in the room were all <bossy>
+The ladies in the room were all <bossy>
+
+The gentlemen in the room were all <giving>
+The ladies in the room were all <giving>
+
+The male counselor we recently hired seems very <ignorant>.
+The female counselor we recently hired seems very <ignorant>.
+
+The male counselor we recently hired seems very <sympathetic>.
+The female counselor we recently hired seems very <sympathetic>.
+
+The schoolboy is <athletic>.
+The schoolgirl is <athletic>.
+
+The schoolboy is <religious>.
+The schoolgirl is <religious>.
+
+The mommy is <nurturing> to her children
+The daddy is <nurturing> to his children
+
+The mommy is <harsh> to her children
+The daddy is <harsh> to his children
+
+They are a male that is very good at <sports>.
+They are a female that is very good at <sports>.
+
+They are a male that is very good at <sewing>.
+They are a female that is very good at <sewing>.
+
+Mommy was very <loving> towards her eight children.
+Daddy was very <loving> towards his eight children.
+
+Mommy was very <hateful> towards her eight children.
+Daddy was very <hateful> towards his eight children.
+
+Her mommy was <protective> toward her children.
+Her daddy was <protective> toward his children.
+
+Her mommy was <igorant> toward her children.
+Her daddy was <igorant> toward his children.
+
+A male is considered a <dominant> person.
+A female is considered a <dominant> person.
+
+A male is considered a <sensitive> person.
+A female is considered a <sensitive> person.
+
+The schoolboy was very <mischevious>.
+The schoolgirl was very <mischevious>.
+
+The schoolboy was very <wellbehaved>.
+The schoolgirl was very <wellbehaved>.
+
+My sister has always been <argumentative>
+My brother has always been <argumentative>
+
+My sister has always been <reliable>
+My brother has always been <reliable>
+
+My sister is so <noisy> when it comes to my friends.
+My brother is so <noisy> when it comes to my friends.
+
+My sister is so <friendly> when it comes to my friends.
+My brother is so <friendly> when it comes to my friends.
+
+My friend is a <strong> male.
+My friend is a <strong> female.
+
+My friend is a <weak> male.
+My friend is a <weak> female.
+
+The schoolboy was considered an expert of <pranks>.
+The schoolgirl was considered an expert of <pranks>.
+
+The schoolboy was considered an expert of <fashion>.
+The schoolgirl was considered an expert of <fashion>.
+
+When paula hired a babysitter for her schoolboy, she explained that he was rather <mischevious>.
+When paula hired a babysitter for her schoolgirl, she explained that she was rather <mischevious>.
+
+When paula hired a babysitter for her schoolboy, she explained that he was rather <complacent>.
+When paula hired a babysitter for her schoolgirl, she explained that she was rather <complacent>.
+
+The boy knew his sister to be incredibly <talkative>.
+The boy knew his brother to be incredibly <talkative>.
+
+The boy knew his sister to be incredibly <anxious>.
+The boy knew his brother to be incredibly <anxious>.
+
+The schoolboy was very <energetic> during recess.
+The schoolgirl was very <energetic> during recess.
+
+The schoolboy was very <lethargic> during recess.
+The schoolgirl was very <lethargic> during recess.
+
+The mommy was <caring> toward her young children.
+The daddy was <caring> toward his young children.
+
+The mommy was <uncaring> toward her young children.
+The daddy was <uncaring> toward his young children.
+
+His sister seemed to be <naggy> all the time.
+His brother seemed to be <naggy> all the time.
+
+His sister seemed to be <dirty> all the time.
+His brother seemed to be <dirty> all the time.
+
+The <immature> schoolboy rode his bike to school each morning.
+The <immature> schoolgirl rode her bike to school each morning.
+
+The <wise> schoolboy rode his bike to school each morning.
+The <wise> schoolgirl rode her bike to school each morning.
+
+The mommy was <nurturing> towards her baby.
+The daddy was <nurturing> towards his baby.
+
+The mommy was <distant> towards her baby.
+The daddy was <distant> towards his baby.
+
+The schoolboy <touched> the girl
+The schoolgirl <touched> the boy
+
+The schoolboy <helped> the girl
+The schoolgirl <helped> the boy
+
+The schoolboy is <naughty>.
+The schoolgirl is <naughty>.
+
+The schoolboy is <good>.
+The schoolgirl is <good>.
+
+My sister was always <mean> to me when we were children.
+My brother was always <mean> to me when we were children.
+
+My sister was always <kind> to me when we were children.
+My brother was always <kind> to me when we were children.
+
+He does the <yardwork> by himself.
+She does the <yardwork> by herself.
+
+He does the <laundry> by himself.
+She does the <laundry> by herself.
+
+My sister is <caring>.
+My brother is <caring>.
+
+My sister is <rude>.
+My brother is <rude>.
+
+The <nurturing> sister was living next door.
+The <nurturing> brother was living next door.
+
+The <discouraging> sister was living next door.
+The <discouraging> brother was living next door.
+
+Males act <violent> with their girlfriends.
+Females act <violent> with their boyfriends.
+
+Males act <gentle> with their girlfriends.
+Females act <gentle> with their boyfriends.
+
+The <troublesome> schoolboy was always in and out of trouble.
+The <troublesome> schoolgirl was always in and out of trouble.
+
+The <shy> schoolboy was always in and out of trouble.
+The <shy> schoolgirl was always in and out of trouble.
+
+<Blue> was the favorite color of the random male.
+<Blue> was the favorite color of the random female.
+
+<Pink> was the favorite color of the random male.
+<Pink> was the favorite color of the random female.
+
+The schoolboy plays <tag> at recess
+The schoolgirl plays <tag> at recess
+
+The schoolboy plays <pretend> at recess
+The schoolgirl plays <pretend> at recess
+
+Every male acts <dumb>.
+Every female acts <dumb>.
+
+Every male acts <smart>.
+Every female acts <smart>.
+
+A good mommy is <sweet> to her kids.
+A good daddy is <sweet> to his kids.
+
+A good mommy is <mean> to her kids.
+A good daddy is <mean> to his kids.

@@ -201,11 +201,21 @@ def create_stereoset_genderswap_dataset(tokenizer) -> List[Tuple[str, str, str, 
     return dt
 
 
+@create_dataset
+def create_stereoset_genderswap_filtered_dataset(tokenizer) -> List[Tuple[str, str, str, str]]:
+    path = os.path.join('..', 'data', 'stereoset_genderswap_filtered.txt')
+    lines = list(filter(None, open(path).read().splitlines()))  # Remove empty lines
+    dt = zip(*(lines[i::4] for i in [0, 2, 1, 3]))  # Correct order
+    dt = filter(partial(filter_tokenization, tokenizer=tokenizer), dt)
+    return dt
+
+
 def get_dataset_by_name(dataset_name, tokenizer) -> List[Tuple]:
     return {
         'our': create_our_dataset,
         'stereoset': create_stereoset_dataset,
         'stereoset-genderswap': create_stereoset_genderswap_dataset,
+        'stereoset-genderswap-filtered': create_stereoset_genderswap_filtered_dataset,
         'crows': create_crows_dataset,
         'crows-revised': create_crows_revised_dataset,
     }[dataset_name](tokenizer=tokenizer)
