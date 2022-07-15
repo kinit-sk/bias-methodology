@@ -345,7 +345,7 @@ def create_stereoset_profession_control(tokenizer) -> List[Tuple[str, str, str, 
 
 
 @create_dataset
-def create_crows_negation_dataset():
+def create_crows_negation_dataset(tokenizer):
     with open(os.path.join('..', 'data', 'crows-neg.csv')) as csvfile:
         cs_samples = list(zip(*csv.reader(csvfile)))
 
@@ -360,7 +360,7 @@ def create_crows_negation_dataset():
                 )    
 
 @create_dataset    
-def create_crows_antistereotype_dataset():
+def create_crows_antistereotype_dataset(tokenizer):
     with open(os.path.join('..', 'data', 'crows-anti.csv')) as csvfile:
         cs_samples = list(zip(*csv.reader(csvfile)))
 

@@ -1,4 +1,4 @@
-FROM ubuntu:20.04 as base
+FROM nvidia/cuda:11.7.0-runtime-ubuntu20.04 as base
 RUN apt-get update && apt-get install -y curl && apt -y upgrade
 
 # See http://bugs.python.org/issue19846

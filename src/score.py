@@ -25,11 +25,11 @@ def mask_logprob(masked_tokens, original_tokens, tokenizer, model, diagnose=Fals
     if cache_state in mask_logprob_cache:
         return mask_logprob_cache[cache_state]
 
-    probs = model(**masked_tokens).logits.softmax(dim=-1)
+    probs = model(**masked_tokens.to('cuda:0')).logits.softmax(dim=-1)
     probs_true = torch.gather(  # Probabilities only for the expected token ids
         probs[0],
         dim=1,
-        index=torch.t(original_tokens['input_ids'])
+        index=torch.t(original_tokens['input_ids'].to('cuda:0'))
     )
     mask_indices = masked_tokens['input_ids'][0] == tokenizer.mask_token_id
     logprob = torch.mean(torch.log10(probs_true[mask_indices]))
