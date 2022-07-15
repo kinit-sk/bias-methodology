@@ -58,6 +58,7 @@ packaging==21.3
 pandas==1.4.2
 pandocfilters==1.5.0
 parso==0.8.3
+patsy==0.5.2
 pexpect==4.8.0
 pickleshare==0.7.5
 Pillow==9.1.1
@@ -84,6 +85,7 @@ six==1.16.0
 sniffio==1.2.0
 soupsieve==2.3.2.post1
 stack-data==0.2.0
+statsmodels==0.13.2
 terminado==0.15.0
 tinycss2==1.1.1
 tokenizers==0.12.1
