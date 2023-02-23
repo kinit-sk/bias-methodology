@@ -182,9 +182,9 @@ def get_score_by_name(name):
     return {
         'f': f_score,
         'ss': ss_score,
-        'ss-genderswap': ss_score_genderwrap,
+        'ss_genderswap': ss_score_genderwrap,
         'cs': cs_score,
-        'cs-antistereo': cs_score_antistereo,
+        'cs_antistereo': cs_score_antistereo,
         'csk': csk_score,
-        'csk-antistereo': csk_score_antistereo,
+        'csk_antistereo': csk_score_antistereo,
     }[name]
