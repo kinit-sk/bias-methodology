@@ -8,6 +8,14 @@ from tokenization import *
 mask_logprob_cache = dict()
 
 
+def clear_cache():
+    """
+    Both `sentence_logprob` and `mask_logprob` are cached to speed up some calculations. This will clear both caches.
+    """
+    mask_logprob_cache.clear()
+    sentence_logprob.cache_clear()
+
+
 def mask_logprob(masked_tokens, original_tokens, tokenizer, model, diagnose=False):
     """
     Calculate mean logprob for masked tokens.
@@ -25,11 +33,12 @@ def mask_logprob(masked_tokens, original_tokens, tokenizer, model, diagnose=Fals
     if cache_state in mask_logprob_cache:
         return mask_logprob_cache[cache_state]
 
-    probs = model(**masked_tokens.to('cuda:0')).logits.softmax(dim=-1)
+    device = torch.device('cuda:0') if torch.cuda.is_available() else torch.device('cpu')
+    probs = model(**masked_tokens.to(device)).logits.softmax(dim=-1)
     probs_true = torch.gather(  # Probabilities only for the expected token ids
         probs[0],
         dim=1,
-        index=torch.t(original_tokens['input_ids'].to('cuda:0'))
+        index=torch.t(original_tokens['input_ids'].to(device))
     )
     mask_indices = masked_tokens['input_ids'][0] == tokenizer.mask_token_id
     logprob = torch.mean(torch.log10(probs_true[mask_indices]))
@@ -61,28 +70,26 @@ def sentence_logprob(sentence, tokenizer, model, diagnose=False):
         print('Decoded token ids:', tokenizer.decode(original_tokens['input_ids'][0]))
         print('Decoded token ids (masked):', tokenizer.decode(original_tokens['input_ids'][0]))
     return logprob
+    
 
-
-def clear_cache():
-    """
-    Clear LRU caches for the two methods we use
-    """
-    sentence_logprob.cache_clear()
-    mask_logprob.cache_clear()
-
-
-def pair_score(dt, tokenizer, model, swap=False):
-    """
-    Compares s0 and s2. Alternatively compares s1 and s3.
-    """
-    offset = swap
+def cs_score(dt, tokenizer, model, swap=False):
     return [
-        sentence_logprob(sam[offset], tokenizer, model) - sentence_logprob(sam[2 + offset], tokenizer, model)
+        sum(crows_logprob_diffs(sam[swap], sam[swap + 2], tokenizer, model))
         for sam in dt
     ]
 
 
-def our_score(dt, tokenizer, model):
+def csk_score(dt, tokenizer, model, swap=False):
+    """
+    Compares s0 and s2. Alternatively compares s1 and s3.
+    """
+    return [
+        sentence_logprob(sam[swap], tokenizer, model) - sentence_logprob(sam[swap + 2], tokenizer, model)
+        for sam in dt
+    ]
+
+
+def f_score(dt, tokenizer, model):
     """
     Compares `s0 - s1` and `s2 - s3`.
 
@@ -94,7 +101,7 @@ def our_score(dt, tokenizer, model):
     ]
 
 
-def stereo_score(dt, tokenizer, model, swap=False):
+def ss_score(dt, tokenizer, model, swap=False):
     """
     Compare `s0` and `s1` sentences with logprob(s0) - logprob(s1). If `swap` is
     True, compares `s2` and `s3` instead.
@@ -108,17 +115,22 @@ def stereo_score(dt, tokenizer, model, swap=False):
     ]
 
 
-def crows_score(dt, tokenizer, model, swap=False):
-    offset = swap
-    return [
-        sum(crows_logprob_diffs(sam[offset], sam[offset + 2], tokenizer, model))
-        for sam in dt
-    ]
-
-
 def crows_sentence_logprobs(sen1, sen2, tokenizer, model):
     """
     Generate logprobs for masked tokens in `sen1`. Tokens different in `sen2` are skipped.
+    
+    Note that this process in underspecified (in this code and in the original paper code) for some cases and the order of sentences can change results, e.g.:
+    
+    `men than women`
+    `women than men`
+    In this case, `men` token will be considered _shared_ and both `than` and `women` will be considered _different_.
+    
+    `women than men`
+    `men than women`
+    In this case, `women` token will be considered _shared_.
+    
+    Logically, it should be the `than` token that is shared in both cases, however SequenceMatcher can not know that, unless we want to manually specify
+    the tokens in the text.
     """
     original_tokens = tokenize(sen1, tokenizer, return_special_tokens_mask=True)
     masked_tokens = tokenize(sen1, tokenizer)
@@ -149,27 +161,30 @@ def crows_logprobs(sen1, sen2, tokenizer, model):
 
 
 def crows_logprob_diffs(sen1, sen2, tokenizer, model):
+    """
+    Generate diffs in logprobs for the `sen1` and `sen2` shared tokens
+    """
     for logprob1, logprob2 in crows_logprobs(sen1, sen2, tokenizer, model):
         yield logprob1 - logprob2
 
 
-stereo_score_genderwrap = partial(stereo_score, swap=True)
-stereo_score_genderwrap.__name__ = 'stereo_score_genderswap'  # Used in plots
+ss_score_genderwrap = partial(ss_score, swap=True)
+ss_score_genderwrap.__name__ = 'ss_score_genderswap'  # Used in plots
 
-crows_score_antistereo = partial(crows_score, swap=True)
-crows_score_antistereo.__name__ = 'crows_score_antistereo'  # Used in plots
+cs_score_antistereo = partial(cs_score, swap=True)
+cs_score_antistereo.__name__ = 'cs_score_antistereo'  # Used in plots
 
-pair_score_antistereo = partial(pair_score, swap=True)
-pair_score_antistereo.__name__ = 'pair_score_antistereo'  # Used in plots
+csk_score_antistereo = partial(csk_score, swap=True)
+csk_score_antistereo.__name__ = 'csk_score_antistereo'  # Used in plots
 
 
 def get_score_by_name(name):
     return {
-        'our': our_score,
-        'stereoset': stereo_score,
-        'stereoset-genderswap': stereo_score_genderwrap,
-        'crows': crows_score,
-        'crows-antistereo': crows_score_antistereo,
-        'pair': pair_score,
-        'pair-antistereo': pair_score_antistereo,
+        'f': f_score,
+        'ss': ss_score,
+        'ss_genderswap': ss_score_genderwrap,
+        'cs': cs_score,
+        'cs_antistereo': cs_score_antistereo,
+        'csk': csk_score,
+        'csk_antistereo': csk_score_antistereo,
     }[name]

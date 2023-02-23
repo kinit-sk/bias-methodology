@@ -2,6 +2,7 @@ from collections import Counter
 import csv
 from functools import partial
 from itertools import count
+import logging
 import json
 import os
 import random
@@ -9,6 +10,10 @@ import re
 from typing import List, Tuple
 
 from tokenization import *
+
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 
 def print_false(func):
@@ -19,10 +24,10 @@ def print_false(func):
     def wrapper(sam):
         result = func(sam)
         if not result:
-            print(func.__name__)
+            logger.info(func.__name__)
             for sen in sam:
-                print(sen)
-            print()
+                logger.info(sen)
+            logger.info(' ')
         return result
 
     return wrapper
@@ -91,12 +96,10 @@ def filter_tokenization(sam, tokenizer):
     kwl = lambda i: kw_len(sam[i], tokenizer)
     result = kwl(0) - kwl(1) == kwl(2) - kwl(3)
     if not result:
-        print('filter_tokenization')
+        logger.info('filter_tokenization')
         for sen in sam:
-            for token in tokenize(sen, tokenizer, only_ids=True):
-                print(tokenizer.decode([token]), end=', ')
-            print()
-        print()
+            logger.info(', '.join(tokenizer.decode([token]) for token in tokenize(sen, tokenizer, only_ids=True)))
+        logger.info(' ')
     return result
 
 
@@ -110,16 +113,16 @@ def create_dataset(func):
         dt = list(dt)
         for sam, count in Counter(dt).items():
             if count > 1:
-                print(f'Duplicate {count}x:', sam)
-        print('# Samples:', len(dt), ', # Unique:', len(set(dt)))
+                logger.info(f'Duplicate {count}x: {sam}')
+        logger.info(f'# Samples: {len(dt)}, # Unique: {len(set(dt))}')
         return dt
 
     return wrapper
 
 
 @create_dataset
-def create_our_dataset(tokenizer) -> List[Tuple[str, str, str, str]]:
-    with open(os.path.join('..', 'data', 'dataset.v2.csv')) as csvfile:
+def create_slovak_gender_dataset(tokenizer) -> List[Tuple[str, str, str, str]]:
+    with open(os.path.join('..', 'data', 'slovak_gender.csv')) as csvfile:
         reader = csv.DictReader(csvfile)
         dt = [
             tuple(row[col] for col in ('veta1', 'veta2', 'veta3', 'veta4'))
@@ -148,7 +151,7 @@ def create_crows_dataset(tokenizer, bias_type='gender') -> List[Tuple[str, str]]
 
 @create_dataset
 def create_crows_revised_dataset(tokenizer, bias_type='gender') -> List[Tuple[str, str]]:
-    with open(os.path.join('..', 'data', 'crows_pairs_our_revised.csv')) as csvfile:
+    with open(os.path.join('..', 'data', 'crows_revised.csv')) as csvfile:
         reader = csv.DictReader(csvfile)
         dt = [
             (row['sent_more'], None, row['sent_less'], None)
@@ -211,7 +214,7 @@ def create_stereoset_genderswap_filtered_dataset(tokenizer) -> List[Tuple[str, s
     return dt
 
 
-def create_stereoset_race_control(tokenizer) -> List[Tuple[str, str, str, str]]:
+def create_stereoset_race_control_dataset(tokenizer) -> List[Tuple[str, str, str, str]]:
     countries = ['Ethiopia', 'Europe', 'Ukraine', 'Sudan', 'Afghanistan', 'Iraq', 'Yemen', 'Russia', 'Italy', 'Iran',
              'Venezuela', 'Oman', 'Somalia', 'Syria', 'China', 'India', 'Britain', 'France', 'Greece', 'Scotland',
              'Brazil', 'Africa', 'Jordan', 'Indonesia', 'Vietnam', 'Pakistan', 'Romania', 'Mexico', 'Puerto Rico',
@@ -282,7 +285,7 @@ def create_stereoset_race_control(tokenizer) -> List[Tuple[str, str, str, str]]:
     return new_dt
 
 
-def create_stereoset_profession_control(tokenizer) -> List[Tuple[str, str, str, str]]:
+def create_stereoset_profession_control_dataset(tokenizer) -> List[Tuple[str, str, str, str]]:
     professions = ['barber', 'coach', 'businessperson', 'football player', 'construction worker', 'manager', 'CEO',
                'accountant', 'commander', 'firefighter', 'mover', 'software developer', 'guard', 'baker', 'doctor',
                'athlete', 'artist', 'dancer', 'mathematician', 'janitor', 'carpenter', 'mechanic', 'actor', 'handyman',
@@ -346,7 +349,7 @@ def create_stereoset_profession_control(tokenizer) -> List[Tuple[str, str, str, 
 
 @create_dataset
 def create_crows_negation_dataset(tokenizer):
-    with open(os.path.join('..', 'data', 'crows-neg.csv')) as csvfile:
+    with open(os.path.join('..', 'data', 'crows_negation.csv')) as csvfile:
         cs_samples = list(zip(*csv.reader(csvfile)))
 
     for cs_sample in cs_samples:
@@ -359,9 +362,10 @@ def create_crows_negation_dataset(tokenizer):
                     cs_sample[i+1],
                 )    
 
+
 @create_dataset    
 def create_crows_antistereotype_dataset(tokenizer):
-    with open(os.path.join('..', 'data', 'crows-anti.csv')) as csvfile:
+    with open(os.path.join('..', 'data', 'crows_antistereotype.csv')) as csvfile:
         cs_samples = list(zip(*csv.reader(csvfile)))
 
     for cs_sample in cs_samples:
@@ -377,15 +381,8 @@ def create_crows_antistereotype_dataset(tokenizer):
     
     
 def get_dataset_by_name(dataset_name, tokenizer) -> List[Tuple]:
-    return {
-        'our': create_our_dataset,
-        'stereoset': create_stereoset_dataset,
-        'stereoset-genderswap': create_stereoset_genderswap_dataset,
-        'stereoset-genderswap-filtered': create_stereoset_genderswap_filtered_dataset,
-        'stereoset-race-control': create_stereoset_race_control,
-        'stereoset-profession-control': create_stereoset_profession_control,
-        'crows': create_crows_dataset,
-        'crows-revised': create_crows_revised_dataset,
-        'crows-negation': create_crows_negation_dataset,
-        'crows-antistereotypes': create_crows_antistereotype_dataset,
-    }[dataset_name](tokenizer=tokenizer)
+    """
+    All the dataset function are called `create_x_dataset`. This can be used to get a dataset by its name `x`.
+    """
+    func_name = f'create_{dataset_name}_dataset'
+    return globals()[func_name](tokenizer=tokenizer)

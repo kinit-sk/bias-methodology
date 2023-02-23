@@ -5,6 +5,9 @@ import re
 def tokenize(sen, tokenizer, only_ids=False, **kwargs):
     """
     Use `tokenizer` to parse <bracketed> sentence `sen`.
+    
+    `only_ids` - Return only token ids if True, `BatchEncoding` otherwise.
+    `kwargs` - Are sent to tokenizer.
     """
     sen = sen.replace('<', '').replace('>', '')
     batch_encoding = tokenizer(sen, return_tensors="pt", **kwargs)
@@ -25,6 +28,8 @@ def tokenize_with_mask(sen, tokenizer, only_ids=False):
     Note the unexpected `''` token in the middle. Instead, we detect the tokens
     that stay the same in the original sentence using `Sequencematcher` and mask
     all the other tokens.
+    
+    `only_ids` - Return only token ids if True, `BatchEncoding` otherwise.
     '''
     batch_encoding = tokenize(sen, tokenizer)
     matcher = SequenceMatcher(
