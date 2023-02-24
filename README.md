@@ -1,6 +1,6 @@
 # In-Depth Look at Word Filling Societal Bias Measures
 
-This repository contains data and code for the _In-Depth Look at Word Filling Societal Bias Measures_ paper accepted to EACL 2023.
+This repository contains data and code for the _In-Depth Look at Word Filling Societal Bias Measures_ paper accepted to EACL 2023. The easiest way to run the code is to use the accompanying `Dockerfile`, but you can also simply use the provided `requirements.txt` file.
 
 ## Code
 
