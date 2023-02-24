@@ -1,3 +1,23 @@
+# In-Depth Look at Word Filling Societal Bias Measures
+
+This repository contains data and code for the _In-Depth Look at Word Filling Societal Bias Measures_ paper accepted to EACL 2023.
+
+## Code
+
+- `dataset.py` - Code for loading all the datasets that we use.
+- `score.py` - Implementation of various bias measurments.
+- `tokenization.py` - Functions related to tokenization and masking.
+- `utils.py` - General utils.
+
+## Notebooks
+
+- `_crows.ipynb` - Visualization of the CrowS score for individual tokens.
+- `_figures.ipynb` - Code that was used to generate figures and tables in the paper.
+- `_score_visualization.ipynb` - Visualization of the score distribution for different models, scores and datasets.
+- `_slovak_gender.ipynb` - Data analysis of the Slovak gender dataset created by us.
+- `_stereoset.ipynb` - Data analysis of the StereoSet dataset.
+- `_tokenization.ipynb` - Debug script used to analyze the tokenization scripts.
+
 ## Datasets
 
 Following datasets can be found in `data` folder. Datasets with asterisk were used in our paper.
